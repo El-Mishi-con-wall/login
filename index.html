@@ -21,7 +21,7 @@
                      <label>password</label>
                  </div>   
                  <div class="forgot-pass">
-                     <a href="#">Forgot yor password?</a>
+                     <a href="#" onclick="openModal('forgot-password')">Forgot yor password?</a>
                  </div>
                  <button type="submit" class="btn">Login</button>
                  
@@ -32,7 +32,7 @@
                 </div>
                 
                  <div class="signup-link">
-                     <a href="#">Signup</a>
+                     <a href="#" onclick="openModal('Signup')">Signup</a>
                  </div>
              </form>
         </div>
@@ -88,6 +88,48 @@
         <span style="--i:48;"></span>
         <span style="--i:49;"></span>
     </div>
+
+    <div id="forgot-password" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('forgot-password')">&times;</span>
+            <h2>Recover Password</h2>
+            <form action="#">
+                <div class="input-box">
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <input type="tel" required>
+                    <label>Phone Number</label>
+                </div>
+                <button type="submit" class="btn">submit</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="Signup" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('Signup')">&times;</span>
+            <h2>Signup</h2>
+            <form action="#">
+                <div class="input-box">
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="input-box">
+                    <input type="password" required>
+                    <label>Confirm Password</label>
+                </div>
+                <button type="submit" class="btn">Signup</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 
 </body>
 
